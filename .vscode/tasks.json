@@ -1,9 +1,26 @@
 {
+    "version": "2.0.0",
     "tasks": [
         {
+            "label": "Compilar Nivel3.c",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "Nivel3.c",
+                "-o",
+                "Nivel3"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Compila o arquivo Nivel3.c usando gcc"
+        },
+        {
             "type": "cppbuild",
-            "label": "C/C++: g++ arquivo de build ativo",
-            "command": "/usr/bin/g++",
+            "label": "C/C++: gcc arquivo de build ativo",
+            "command": "/usr/bin/gcc",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -23,6 +40,5 @@
             },
             "detail": "Tarefa gerada pelo Depurador."
         }
-    ],
-    "version": "2.0.0"
+    ]
 }
